@@ -1,0 +1,5 @@
+{
+  "admin": ["read:articles", "write:articles", "delete:articles", "manage:users"],
+  "editor": ["read:articles", "write:articles"],
+  "viewer": ["read:articles"]
+}

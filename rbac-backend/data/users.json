@@ -1,0 +1,43 @@
+[
+  {
+    "id": "1761313021124",
+    "name": "Admin User",
+    "email": "admin@test.com",
+    "password": "$2b$10$cGNKCU8H49QBIr..vGw.UOpKOD5gMm.tFfJz.J8CAWUsoP5QIgT2K",
+    "roles": [
+      "admin"
+    ],
+    "createdAt": "2025-10-24T13:37:01.222Z"
+  },
+  {
+    "id": "1761313021224",
+    "name": "Editor User",
+    "email": "editor@test.com",
+    "password": "$2b$10$UyLUik5ISnIVHrJ7nmnEqugnITCc8Z6ySzf7wKVMlOd7xXoTAqlwm",
+    "roles": [
+      "editor"
+    ],
+    "createdAt": "2025-10-24T13:37:01.289Z"
+  },
+  {
+    "id": "1761313021291",
+    "name": "Viewer User",
+    "email": "viewer@test.com",
+    "password": "$2b$10$14ZyPC6wilVH0S65R.0mN.iPciYoTmoqZkjZerblRGhoSEdxhfsam",
+    "roles": [
+      "viewer"
+    ],
+    "createdAt": "2025-10-24T13:37:01.365Z"
+  },
+  {
+    "id": "1761313021368",
+    "name": "Multi Role User",
+    "email": "multi@test.com",
+    "password": "$2b$10$srhfI3SDmC20qiKK2h0xLOAE51JSaS4OZkUf4aQJVHI58wlS8hr.C",
+    "roles": [
+      "editor",
+      "viewer"
+    ],
+    "createdAt": "2025-10-24T13:37:01.424Z"
+  }
+]
