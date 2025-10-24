@@ -1,16 +1,16 @@
 import axios from 'axios';
 
-// API Base URL - works for both development and production
-const API_BASE_URL = import.meta.env.VITE_API_URL || 'http://localhost:3000';
+// API Base URL - Remove trailing slash if exists
+const API_BASE_URL = (import.meta.env.VITE_API_URL || 'http://localhost:3000').replace(/\/$/, '');
 
 console.log('API Base URL:', API_BASE_URL); // For debugging
 
 const api = axios.create({
-  baseURL: `${API_BASE_URL}/api`,
+  baseURL: `${API_BASE_URL}/api`, // Single /api here
   headers: {
     'Content-Type': 'application/json',
   },
-  withCredentials: false, // Set to true if using cookies
+  withCredentials: false,
 });
 
 // Add token to requests automatically
@@ -32,7 +32,6 @@ api.interceptors.response.use(
   (response) => response,
   (error) => {
     if (error.response?.status === 401) {
-      // Token expired or invalid
       localStorage.removeItem('token');
       localStorage.removeItem('user');
       window.location.href = '/login';
